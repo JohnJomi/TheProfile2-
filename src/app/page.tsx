@@ -9,7 +9,7 @@ import { Ledger } from "@/components/Ledger";
 import { Plate } from "@/components/Plate";
 
 const month = (iso: string) =>
-  new Date(`${iso}-01T00:00:00Z`).toLocaleDateString("en-GB", {
+  new Date(`${iso}-01T00:00:00Z`).toLocaleDateString("en-US", {
     month: "short",
     year: "numeric",
     timeZone: "UTC",

@@ -87,7 +87,7 @@ function Tycoon() {
     <Frame label="Four detection layers, weighted 0.30, 0.30, 0.20 and 0.20, combine into one verdict: deliver, warn or block.">
       {layers.map(([id, name, w], i) => {
         const y = 44 + i * 60;
-        const width = w * 330;
+        const width = w * 560;
         return (
           <g key={id}>
             <text x="16" y={y - 8}>
@@ -99,7 +99,7 @@ function Tycoon() {
             </text>
             <path
               pathLength={1}
-              d={`M ${58 + width} ${y + 10} C 260 ${y + 10}, 290 150, 352 150`}
+              d={`M ${58 + width} ${y + 10} C 300 ${y + 10}, 300 150, 352 150`}
             />
           </g>
         );

@@ -65,8 +65,14 @@ const figures: Record<string, Work["figures"]> = {
   ],
 };
 
+/** Shorter display names for the two titles that are a full sentence. */
+const renamed: Record<string, [string, string]> = {
+  "tomato-freshness-xai": ["Tomato Freshness", "Classification with Explainable AI"],
+  "nasa-seismic-noise-filtering-system": ["Seismic Noise Filter", "NASA Seismic Noise Filtering System"],
+};
+
 const fromSite: Work[] = projects.map((p) => {
-  const [name, kind = ""] = p.title.split(" — ");
+  const [name, kind = ""] = renamed[p.slug] ?? p.title.split(" — ");
   const profileOnly = p.githubUrl === "https://github.com/JohnJomi";
   return {
     slug: p.slug,
