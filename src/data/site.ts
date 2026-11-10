@@ -86,3 +86,86 @@ export const record = {
     status: "In progress, 2026",
   },
 };
+
+/** Longer detail for the experience page, keyed by `org` above. From the previous site. */
+export const experienceDetail: Record<string, { kind: string; bullets: string[]; stack: string[] }> = {
+  "Tycoon 2FA phishing detection": {
+    kind: "Research",
+    bullets: [
+      "Specified a four-layer architecture: header and domain intelligence, URL and redirect-chain analysis, NLP and ML body analysis, and threat-intelligence correlation, fused into one risk verdict.",
+      "Designed a signal contract where every detection carries readable evidence, not a bare number, so each layer can be ablated on its own.",
+      "Scoped the prototype to read-only Gmail ingest, taking no action on mail, to keep the research within ethical and legal limits.",
+      "Every documented claim must trace back to a measurement from the evaluation harness.",
+    ],
+    stack: ["Python", "asyncio", "FastAPI", "NLP", "Machine learning", "Gmail API"],
+  },
+  "Prophaze Technologies": {
+    kind: "Internship",
+    bullets: [
+      "Researched small language models and hybrid reasoning models for real-world AI applications.",
+      "Benchmarked on-device models on latency, memory, inference speed and deployment feasibility for edge devices.",
+      "Compared generative AI architectures through literature review and technical evaluation, and documented the findings.",
+      "Explored optimisation strategies for efficient inference on resource-constrained devices.",
+    ],
+    stack: ["Small language models", "Hybrid reasoning models", "Edge AI", "Python", "PyTorch"],
+  },
+  "Proddy AI": {
+    kind: "Internship",
+    bullets: [
+      "Built and improved full-stack features in Next.js for a modular AI work-management platform.",
+      "Built and integrated REST APIs between frontend and backend modules.",
+      "Worked in Git-based review, bug-fix and feature cycles across multiple sprints.",
+      "Found and fixed UI and backend performance issues.",
+    ],
+    stack: ["Next.js", "React", "TypeScript", "REST APIs", "Node.js", "Git"],
+  },
+  "IEEE Student Branch, CHRIST University": {
+    kind: "Leadership",
+    bullets: [],
+    stack: [],
+  },
+};
+
+/** The about page. Copy carried over from the previous site, tightened. */
+export const about = {
+  intro: [
+    "I'm a Computer Science undergraduate at CHRIST University with an honors track in AI and ML. I like software where clean architecture, a model that actually works, and a good interface all meet.",
+    "So far that has meant enterprise software, AI-powered apps, cloud infrastructure, phishing-detection research, and running the budget of a 400-member IEEE branch. I think technology should solve a real problem, not show off how complicated it is.",
+  ],
+  pillars: [
+    { title: "AI engineering", text: "Building software around machine learning models and LLMs." },
+    { title: "Full-stack development", text: "Web apps with modern frontends and backends that scale." },
+    { title: "Cloud computing", text: "Shipping secure, production-ready systems on cloud infrastructure." },
+  ],
+  journey: [
+    "Started computer science",
+    "Found artificial intelligence",
+    "Built full-stack applications",
+    "Worked on enterprise projects",
+    "Building AI-first products",
+  ],
+  focus: [
+    { title: "AI-powered products", text: "Turning what a model can do into something people can rely on." },
+    { title: "Backend systems that scale", text: "Structures that stay clean and maintainable in production." },
+    { title: "Cloud-native architecture", text: "Infrastructure patterns that make delivery resilient." },
+    { title: "Practical machine learning", text: "Techniques that solve real-world problems." },
+  ],
+  values: [
+    { title: "Problem first", text: "Technology should solve problems." },
+    { title: "Clean architecture", text: "Maintainable code over clever code." },
+    { title: "Keep learning", text: "Always improving through research and experiments." },
+    { title: "User experience", text: "Simple products last longer." },
+  ],
+  beyond: ["Artificial intelligence", "Cybersecurity", "Product design", "Cloud computing", "Research", "Photography"],
+};
+
+/** The skills page, in the order software gets built. From the previous site. */
+export const skillStages = [
+  { stage: "Foundation", title: "It starts with code", text: "The languages I solve problems and build algorithms in.", items: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "C"] },
+  { stage: "Interfaces", title: "Fast, clear interfaces", text: "Responsive frontends that are quick to use.", items: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "HTML", "CSS"] },
+  { stage: "Backends", title: "APIs that hold up", text: "Secure server code, REST APIs and authentication.", items: ["Node.js", "Express", "FastAPI", "REST APIs", "Prisma", "Auth"] },
+  { stage: "Data", title: "Data that stays reliable", text: "Database design and data handling for real applications.", items: ["PostgreSQL", "MongoDB", "SQL", "Vector databases", "pgvector"] },
+  { stage: "Intelligence", title: "Adding the AI", text: "Models, LLMs and agent workflows inside real products.", items: ["Claude", "Gemini", "LangChain", "Hugging Face", "PyTorch", "TensorFlow", "Amazon Bedrock"] },
+  { stage: "Deployment", title: "Into production", text: "Cloud infrastructure, containers and CI.", items: ["AWS", "Azure", "Docker", "GitHub Actions", "Linux", "Nginx"] },
+  { stage: "Workflow", title: "Every day", text: "The tools I design, build, debug and ship with.", items: ["Git", "GitHub", "VS Code", "Jupyter", "Claude Code", "Figma"] },
+];

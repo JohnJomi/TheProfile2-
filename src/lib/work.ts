@@ -123,3 +123,12 @@ export const selectedSlugs = [
 
 export const selected = selectedSlugs.map((s) => works.find((w) => w.slug === s)!);
 export const getWork = (slug: string) => works.find((w) => w.slug === slug);
+
+/** A work as a row in the big list. */
+export const toRow = (w: Work) => ({
+  href: `/projects/${w.slug}`,
+  title: w.name,
+  side: [w.kind || w.disciplines.join(", "), `${w.status}, ${w.year}`],
+  note: w.description,
+  fields: w.disciplines,
+});

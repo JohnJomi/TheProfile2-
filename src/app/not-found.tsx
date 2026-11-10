@@ -1,18 +1,21 @@
 import Link from "next/link";
-import { Top } from "@/components/Chrome";
+import { Kinetic } from "@/components/Kinetic";
 
 export default function NotFound() {
   return (
-    <>
-      <Top />
-      <main className="wrap">
-        <header className="case-head">
-          <h1>No page here</h1>
-          <p className="kind">
-            This address doesn&rsquo;t match anything on the site. <Link href="/#index">Go to the index of projects</Link>.
-          </p>
-        </header>
-      </main>
-    </>
+    <section className="hero" data-mood="fire">
+      <Kinetic lines={["404"]} fill={60} />
+      <div className="sub">
+        <p>Nothing lives at this address. The projects are a good place to start.</p>
+        <div className="actions">
+          <Link className="btn" href="/projects">
+            See the projects
+          </Link>
+          <Link className="btn ghost" href="/">
+            Go home
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }

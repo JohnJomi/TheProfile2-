@@ -14,8 +14,8 @@ export default function OgImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#1d33cf",
-          color: "#eeefea",
+          background: "#FF4A1C",
+          color: "#000",
           padding: 64,
         }}
       >
@@ -24,7 +24,7 @@ export default function OgImage() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", fontSize: 44, lineHeight: 1.2 }}>
           <span>I build AI products and the web software around them.</span>
-          <span style={{ color: "#ffd600", marginTop: 16 }}>johnjomi.dev</span>
+          <span style={{ color: "#FFC4E4", marginTop: 16 }}>johnjomi.dev</span>
         </div>
       </div>
     ),
